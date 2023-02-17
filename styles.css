@@ -238,7 +238,7 @@ button, link {
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    line-height: 28px;
+    line-height: calc( 28 / 24);
     letter-spacing: 0.05em;
     color: #000000;
   }
@@ -271,8 +271,6 @@ button, link {
     position: relative;
   }
     
-
-
   .table-modal-input, 
   .table-persons,
   .table-form-persons,
@@ -305,6 +303,10 @@ button, link {
     -webkit-appearance: none;
   }
 
+  .modal-table-calendar {
+    display: flex;
+    align-items: center;
+  }
   .click-icon {
     position: absolute;
     right: 8.47%;
