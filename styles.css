@@ -247,19 +247,22 @@ button, link {
     }
 
 /* Стилі календаря */
+    /* current day */
   .calendar-content .today {
     background-color: var(--color-text-link);
   }
   
+  /* selected day */
   .calendar-content .day.selected::after{
     border-top: 20px solid var(--color-text-button)
   }
-  
+  /* selected day border */
   .calendar-content .day.selected {
     -webkit-box-shadow: inset 0 0 0 1px var(--color-text-button)!important;
     box-shadow: inset 0 0 0 1px var(--color-text-button)!important;
   }
   
+  /* field input */
   .input input { 
     height: auto;
     padding: 0;
@@ -268,10 +271,12 @@ button, link {
     background-color: transparent;
   }
   
+  /* button */
   .button {
     padding: 0;
   }
   
+  /* span-icon-calendar */
   .default-icon-calendar {
     position: absolute;
     top: 100%;
@@ -281,6 +286,7 @@ button, link {
     display: inline-block;
   }
 
+  /* icon-calendar */
   [class*=default-icon] {
     width: 24px;
     height: 24px;
