@@ -94,7 +94,33 @@
     					</span> 
     				</label>
 
-				    <label class="modal-form-field">   
+						<label class="modal-form-field">
+							<span class="modal-form-input-wrapper">
+						
+								<!-- <svg class="click-icon" width="19.95" height="11.48">
+									<use href="./icons.svg#icon-click"></use>
+								</svg>
+						
+								<select name="day" class="table-modal-input">
+									<option value="today" selected lang="uk">Сьогодні</option>
+									<option value="tomorrow" lang="uk">Завтра</option>
+									<option value="second_tomorrow">Післязавтра</option>
+								</select> -->
+								<input 
+									class="table-modal-input" 
+									type="text" 
+									data-role="calendarpicker" 
+									data-role="calendarpicker" 
+									data-locale="uk-UA"
+									data-format="DD.MM.YYYY">
+									
+								<span class="table-input-desc" lang="uk">На яку дату бронювати?</span>
+							</span>
+						</label>
+
+
+
+				    <!-- <label class="modal-form-field">   
 				  	  <span class="modal-form-input-wrapper">
 				        
 								<svg class="click-icon" width="19.95" height="11.48">
@@ -109,7 +135,17 @@
 
 				  		  <span class="table-input-desc" lang="uk">На яку дату бронювати?</span>
 				    	</span>
-				    </label>
+				    </label> -->
+
+						<!-- На яку дату бронювати? -->
+						<!-- https://metroui.org.ua/calendarpicker.html -->
+						<div class="modal-table-calendar">
+							<input class="table-modal-input" type="text" data-role="calendarpicker" data-role="calendarpicker" data-locale="uk-UA"
+								data-format="DD.MM.YYYY">
+							<span class="table-input-desc" lang="uk">На яку дату бронювати?</span>
+						
+						</div>
+
     			</div> 
 				</div>
 
