@@ -1,2 +1,1 @@
-# goit-modal-2
- 
+# goit-markup-hw-project-2
