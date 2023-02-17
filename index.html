@@ -17,6 +17,10 @@
           crossorigin="anonymous"
           referrerpolicy="no-referrer"/>
 
+    <link rel="stylesheet" 
+        href="https://cdn.korzh.com/metroui/v4/css/metro-all.min.css">
+
+
     <link rel="stylesheet" href="./styles.css" />
   </head>
 <body>
@@ -52,25 +56,35 @@
       <p class="table-modal-text" lang="uk">ЗАБРОНЮВAТИ СТОЛИК</p>
 
       <form class="table-modal-form">
-      	<div class="table-form">
+      	<div class="modal-table-form">
     		
 					<div class="table-block">
+
+						<!-- Ваше ім'я -->
+						<div>
     				<label class="modal-form-field">
         			<span class="modal-form-input-wrapper">
     						<input type="text" name="user_name" placeholder="Ваше ім'я" class="table-modal-input" required pattern="^[a-zA-Zа-яА-Я]+$" minlength="2" />
         				<span class="table-input-desc" lang="uk">На кого забронювати столик?</span>
         			</span>
     				</label>
+						</div>
 
+						<!-- Номер телефону -->
+						<div>
     				<label class="modal-form-field">
          			<span class="modal-form-input-wrapper">
     						<input type="tel" name="user_phone" placeholder="+38 (___) ___-__-__" class="table-modal-input" required pattern="[+][0-9]{12}" title="+380XXXXXXXXX"  />
     						<span class="table-input-desc" lang="uk">Номер телефону</span>
         			</span>
-     				</label>  
+     				</label>
+						</div>
     			</div>
     
 					<div class="table-block">
+
+						<!-- Столик на яку кількість осіб? -->
+						<div>
       			<label class="modal-form-field">   
             	<span class="modal-form-input-wrapper">
 
@@ -93,23 +107,37 @@
     						<span class="table-input-desc" lang="uk">Столик на яку кількість осіб?</span>
     					</span> 
     				</label>
+						</div>
 
-				    <label class="modal-form-field">   
+
+				    <!-- <label class="modal-form-field">   
 				  	  <span class="modal-form-input-wrapper">
 				        
 								<svg class="click-icon" width="19.95" height="11.48">
 					        <use href="./icons.svg#icon-click"></use>
-				        </svg>
+				        </svg> -->
 				    		
-								<select  name="day" class="table-modal-input" > 
+								<!-- <select  name="day" class="table-modal-input" > 
 				        	<option value="today" selected lang="uk">Сьогодні</option>
 					        <option value="tomorrow" lang="uk">Завтра</option> 
 					        <option value="second_tomorrow">Післязавтра</option>
-						    </select>
+						    </select> -->
 
-				  		  <span class="table-input-desc" lang="uk">На яку дату бронювати?</span>
+				  		  <!-- <span class="table-input-desc" lang="uk">На яку дату бронювати?</span>
 				    	</span>
-				    </label>
+				    </label> -->
+
+
+						<!-- На яку дату бронювати? -->
+						<div>
+							<input 
+								class="table-modal-input"
+								type="text" 
+								data-role="calendarpicker" 
+								id="calendarpicker_locale">
+							<span class="table-input-desc" lang="uk">На яку дату бронювати?</span>
+
+						</div>
     			</div> 
 				</div>
 
@@ -196,6 +224,9 @@
 <!-- Подложка под модальным окном -->
 <div class="overlay js-overlay-modal"></div>
 
+<!-- Metro UI -->
+<!-- https://metroui.org.ua/intro.html -->
+<script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
 <script src="./js/modal_windows.js"></script>
 
 </body>
