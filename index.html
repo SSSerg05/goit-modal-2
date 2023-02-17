@@ -17,6 +17,9 @@
           crossorigin="anonymous"
           referrerpolicy="no-referrer"/>
 
+		<link rel="stylesheet" 
+				  href="https://cdn.korzh.com/metroui/v4/css/metro-all.min.css">
+
     <link rel="stylesheet" href="./styles.css" />
   </head>
 <body>
@@ -39,7 +42,7 @@
 
   <!--Modal TABLE-->
 	<div class="modal" data-modal="1">
-		<div class="table-modal">
+		<div class="modal-table">
       <button 
           type="button" 
           class="modal-close-btn js-modal-close" 
@@ -52,7 +55,7 @@
       <p class="table-modal-text" lang="uk">ЗАБРОНЮВAТИ СТОЛИК</p>
 
       <form class="table-modal-form">
-      	<div class="table-form">
+      	<div class="modal-table-form">
     		
 					<div class="table-block">
     				<label class="modal-form-field">
@@ -94,7 +97,38 @@
     					</span> 
     				</label>
 
-				    <label class="modal-form-field">   
+						<!-- На яку дату бронювати? -->
+						<div class="field">
+						<label class="modal-form-field">
+							<span class="modal-form-input-wrapper">
+						
+								<!-- <svg class="click-icon" width="19.95" height="11.48">
+									<use href="./icons.svg#icon-click"></use>
+								</svg>
+						
+								<select name="day" class="table-modal-input">
+									<option value="today" selected lang="uk">Сьогодні</option>
+									<option value="tomorrow" lang="uk">Завтра</option>
+									<option value="second_tomorrow">Післязавтра</option>
+								</select> -->
+
+								<!-- https://metroui.org.ua/calendarpicker.html -->
+								<!-- <span class='mif-calendar'> -->
+								<input 
+									class="table-modal-input modal-calendar" 
+									type="text" 
+									data-role="calendarpicker" 
+									data-locale="uk-UA"
+									data-format="DD.MM.YYYY"
+									clearButton="true"
+									data-dialog-mode="true">
+									
+								<span class="table-input-desc" lang="uk">На яку дату бронювати?</span>
+							</span>
+						</label>
+						</div>
+
+				    <!-- <label class="modal-form-field">   
 				  	  <span class="modal-form-input-wrapper">
 				        
 								<svg class="click-icon" width="19.95" height="11.48">
@@ -109,7 +143,9 @@
 
 				  		  <span class="table-input-desc" lang="uk">На яку дату бронювати?</span>
 				    	</span>
-				    </label>
+				    </label> -->
+
+
     			</div> 
 				</div>
 
@@ -195,6 +231,10 @@
 
 <!-- Подложка под модальным окном -->
 <div class="overlay js-overlay-modal"></div>
+
+<!-- Metro UI -->
+<!-- https://metroui.org.ua/intro.html -->
+<script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
 
 <script src="./js/modal_windows.js"></script>
 
