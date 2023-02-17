@@ -42,7 +42,7 @@
 
   <!--Modal TABLE-->
 	<div class="modal" data-modal="1">
-		<div class="table-modal">
+		<div class="modal-table">
       <button 
           type="button" 
           class="modal-close-btn js-modal-close" 
@@ -55,7 +55,7 @@
       <p class="table-modal-text" lang="uk">ЗАБРОНЮВAТИ СТОЛИК</p>
 
       <form class="table-modal-form">
-      	<div class="table-form">
+      	<div class="modal-table-form">
     		
 					<div class="table-block">
     				<label class="modal-form-field">
@@ -97,8 +97,10 @@
     					</span> 
     				</label>
 
+						<!-- На яку дату бронювати? -->
+						<div class="field">
 						<label class="modal-form-field">
-							<span class="modal-form-input-wrapper">
+							<!-- <span class="modal-form-input-wrapper"> -->
 						
 								<!-- <svg class="click-icon" width="19.95" height="11.48">
 									<use href="./icons.svg#icon-click"></use>
@@ -109,10 +111,12 @@
 									<option value="tomorrow" lang="uk">Завтра</option>
 									<option value="second_tomorrow">Післязавтра</option>
 								</select> -->
+
+								<!-- https://metroui.org.ua/calendarpicker.html -->
+								<!-- <span class='mif-calendar'> -->
 								<input 
-									class="table-modal-input" 
+									class="table-modal-input calendar" 
 									type="text" 
-									data-role="calendarpicker" 
 									data-role="calendarpicker" 
 									data-locale="uk-UA"
 									data-format="DD.MM.YYYY">
@@ -120,8 +124,7 @@
 								<span class="table-input-desc" lang="uk">На яку дату бронювати?</span>
 							</span>
 						</label>
-
-
+						</div>
 
 				    <!-- <label class="modal-form-field">   
 				  	  <span class="modal-form-input-wrapper">
@@ -140,14 +143,6 @@
 				    	</span>
 				    </label> -->
 
-						<!-- На яку дату бронювати? -->
-						<!-- https://metroui.org.ua/calendarpicker.html -->
-						<div class="modal-table-calendar">
-							<input class="table-modal-input" type="text" data-role="calendarpicker" data-role="calendarpicker" data-locale="uk-UA"
-								data-format="DD.MM.YYYY">
-							<span class="table-input-desc" lang="uk">На яку дату бронювати?</span>
-						
-						</div>
 
     			</div> 
 				</div>
